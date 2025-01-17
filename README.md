@@ -7,9 +7,17 @@
 <!-- 2. プロフィールや連絡先を変更 -->
 ## <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28"> Hi there
 
-- 🧑‍💻 I'm a full stack engineer.
-- 🌱 I’m currently learning React Native!
-- 📫 How to reach me: [Twitter - @Kouta_i5](https://twitter.com/Kouta_i5)
+I have been working on two projects at the Tissue Engineering Laboratory at Doshisha University, 
+focusing on the social implementation of AI using medical data:
+- 📱 Development of a mobile application supporting AI-based pathogen diagnosis in infectious keratitis
+- 💊 Development of Software as Medical Device (SaMD) aimed at improving medication adherence in psychiatric patients
+
+In these projects, I have been comprehensively involved from data collection to implementation, including:
+- 🐍 Building and evaluating AI models using Python
+- 📱 Developing full-stack applications with frontend and backend components
+- 🌐 Configuring cloud infrastructure for production deployment
+- 📝 Conducting field testing for real-world implementation
+
 <br>
 
 
@@ -25,22 +33,5 @@
 <!-- ライトモート：theme=light  -->
 ## 🏃‍♀️ Activities
 <div align="left"> 
-  <img alt="Top Langs" height="170px" src="https://github-readme-stats.vercel.app/api?username=Kouta-i5&theme=light&layout=compact" />
   <img alt="github stats" height="170px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kouta-i5&theme=light&layout=compact" />
 </div>
-
-
-<!--
-This repository is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
