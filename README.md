@@ -33,5 +33,5 @@ In these projects, I have been comprehensively involved from data collection to 
 <!-- ライトモート：theme=light  -->
 ## 🏃‍♀️ Activities
 <div align="left"> 
-  <img alt="github stats" height="170px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kouta-i5&theme=light&layout=compact" />
+  <img alt="github stats" height="170px" src="https://github-readme-stats.vercel.app/api?username=Kouta-i5&theme=light&layout=compact" />
 </div>
