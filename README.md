@@ -17,7 +17,7 @@
 <!-- ライトモート：theme=light -->
 <!-- アイコンの選択肢一覧：https://arc.net/l/quote/zizyykfh -->
 ## 🌱 Skills
-<img alt="my skills" src="https://skillicons.dev/icons?theme=light&perline=7&i=html,css,js,ts,react,reactnative,figma,python,fastapi,docker,aws,gcp" />
+<img alt="my skills" src="https://skillicons.dev/icons?theme=light&perline=7&i=html,css,js,ts,react,figma,python,fastapi,docker,aws,gcp" />
 <br>
 
 
