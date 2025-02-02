@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 import { Typography, Button } from "@material-tailwind/react";
+import Image from "next/image";
 
 export function HomeSection() {
   const titleWords = ["私の", "ポートフォリオ"];
 
   const AnimatedTitle = () => (
-    <Typography variant="h1" className="text-4xl font-bold mb-4">
+    <Typography variant="h1" className="text-4xl font-bold mb-4" {...({} as any)}>
       {titleWords.map((word, wordIndex) => (
         <span key={wordIndex} className="inline-block mr-4 last:mr-0">
           {word.split("").map((letter, letterIndex) => (
@@ -30,40 +31,36 @@ export function HomeSection() {
   );
 
   return (
-    <div className="max-w-7xl mx-auto px-4 relative">
-      {/* ヒーローセクション */}
-      <div className="relative flex flex-col md:flex-row items-center justify-between py-20">
-        
-  <div className="md:w-1/2 relative z-10">
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-    >
-      <AnimatedTitle />
-      <Typography className="text-gray-700 mb-6">
-        エンジニアを目指す学生です。技術への情熱と学習意欲を持って日々成長しています。
-      </Typography>
-      <div className="space-x-4">
-        <Button size="lg" color="blue">
-          プロジェクトを見る
-        </Button>
-        <Button size="lg" variant="outlined">
-          連絡する
-        </Button>
+    <div className="relative flex flex-col md:flex-row items-center justify-between py-20">
+      <div className="md:w-1/2 relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <AnimatedTitle />
+          <Typography className="text-gray-700 mb-6" {...({} as any)}>
+            エンジニアを目指す学生です。技術への情熱と学習意欲を持って日々成長しています。
+          </Typography>
+        </motion.div>
       </div>
-    </motion.div>
-  </div>
-  
-  <div className="md:w-1/2 mt-8 md:mt-0 relative z-10">
-    <motion.div
-      initial={{ opacity: 0, scale: 0.9 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.8 }}
-          className="bg-gray-200 h-80 rounded-lg"
-        />
+      
+      <div className="md:w-1/2 mt-8 md:mt-0 relative z-10">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8 }}
+          className="relative h-80 w-full rounded-lg overflow-hidden"
+        >
+          <Image
+            src="/images/rabbit.png"
+            alt="プロフィール画像"
+            fill
+            className="object-cover"
+            priority
+          />
+        </motion.div>
       </div>
     </div>
-  </div>
   );
 }

@@ -1,7 +1,8 @@
-import { Card,  CardBody, CardFooter } from   "@material-tailwind/react";
+import { Card, CardBody, CardFooter } from "@material-tailwind/react";
 import { Github } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import type { CardProps, CardBodyProps, CardFooterProps } from "@material-tailwind/react"
 
 interface ProjectCardProps {
   title: string
@@ -11,9 +12,9 @@ interface ProjectCardProps {
   tags: string[]
 }
 
-export  function ProjectCard({ title, description, image, link, tags }: ProjectCardProps) {
+export function PersonalProject({ title, description, image, link, tags }: ProjectCardProps) {
   return (
-    <Card className="overflow-hidden">
+    <Card className="overflow-hidden" variant="filled" {...({} as any)}>
       <div className="relative aspect-video">
         <Image
           src={image || "/placeholder.svg"}
@@ -22,7 +23,7 @@ export  function ProjectCard({ title, description, image, link, tags }: ProjectC
           className="object-cover transition-transform hover:scale-105"
         />
       </div>
-      <CardBody className="p-4">
+      <CardBody className="p-4" {...({} as any)}>
         <h3 className="font-semibold text-xl mb-2">{title}</h3>
         <p className="text-sm text-muted-foreground mb-4">{description}</p>
         <div className="flex flex-wrap gap-2">
@@ -36,7 +37,7 @@ export  function ProjectCard({ title, description, image, link, tags }: ProjectC
           ))}
         </div>
       </CardBody>
-      <CardFooter className="p-4 pt-0">
+      <CardFooter className="p-4 pt-0" {...({} as any)}>
         {link && (
           <Link href={link} target="_blank" className="inline-flex items-center gap-2 text-sm hover:underline">
             <Github className="h-4 w-4" />

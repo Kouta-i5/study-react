@@ -4,22 +4,26 @@ import { motion } from "framer-motion";
 const skills = [
   {
     title: "フロントエンド",
-    items: "React, Next.js, TypeScript, Tailwind CSS"
+    items: "JavaScript, TypeScript, React, Next.js, React Native, Tailwind CSS,MUI"
   },
   {
     title: "バックエンド",
-    items: "Node.js, Express, Python, SQL"
+    items: "Node.js, Python, SQL"
   },
   {
-    title: "その他",
-    items: "Git, Docker, AWS"
+    title: "DevOps",
+    items: "GitHub,Hugging Face, Docker, AWS"
   }
 ];
 
-export function SkillsSection() {
+export function TechSkill() {
   return (
     <div className="py-20">
-      <Typography variant="h2" className="text-3xl font-bold mb-8 text-center">
+      <Typography 
+        variant="h2" 
+        className="text-3xl font-bold mb-8 text-center" 
+        {...({} as any)}
+      >
         技術スキル
       </Typography>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -30,9 +34,9 @@ export function SkillsSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
           >
-            <Card className="p-6">
-              <Typography variant="h5" className="mb-4">{skill.title}</Typography>
-              <Typography className="text-gray-700">
+            <Card className="p-6" {...({} as any)}>
+              <Typography variant="h5" className="mb-4" {...({} as any)}>{skill.title}</Typography>
+              <Typography className="text-gray-700" {...({} as any)}>
                 {skill.items}
               </Typography>
             </Card>

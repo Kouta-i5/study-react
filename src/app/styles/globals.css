@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* デフォルトのカラーテーマ（ライトモード） */
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+  /* 赤色の定義 */
+  --red-50: #ffebee;
+  --red-100: #ffcdd2;
+  --red-200: #ef9a9a;
+  --red-300: #e57373;
+  --red-400: #ef5350;
+  --red-500: #f44336;
+  --red-600: #e53935;
+  --red-700: #d32f2f;
+  --red-800: #c62828;
+  --red-900: #b71c1c;
+
+  /* 緑色の定義 */
+  --green-50: #e8f5e9;
+  --green-100: #c8e6c9;
+  --green-200: #a5d6a7;
+  --green-300: #81c784;
+  --green-400: #66bb6a;
+  --green-500: #4caf50;
+  --green-600: #43a047;
+  --green-700: #388e3c;
+  --green-800: #2e7d32;
+  --green-900: #1b5e20;
+
+  /* ライトグリーンの定義 */
+  --light-green-50: #f1f8e9;
+  --light-green-100: #dcedc8;
+  --light-green-200: #c5e1a5;
+  --light-green-300: #aed581;
+  --light-green-400: #9ccc65;
+  --light-green-500: #8bc34a;
+  --light-green-600: #7cb342;
+  --light-green-700: #689f38;
+  --light-green-800: #558b2f;
+  --light-green-900: #33691e;
+
+  /* 水色の定義 */
+  --cyan-50: #e0f7fa;
+  --cyan-100: #b2ebf2;
+  --cyan-200: #80deea;
+  --cyan-300: #4dd0e1;
+  --cyan-400: #26c6da;
+  --cyan-500: #00bcd4;
+  --cyan-600: #00acc1;
+  --cyan-700: #0097a7;
+  --cyan-800: #00838f;
+  --cyan-900: #006064;
+
+  /* 新しい水色の定義 */
+  --light-blue: #a0d8ef;
+
+  /* グレーの定義 */
+  --gray-50: #fafafa;
+  --gray-100: #f5f5f5;
+  --gray-200: #eeeeee;
+  --gray-300: #e0e0e0;
+  --gray-400: #bdbdbd;
+  --gray-500: #9e9e9e;
+  --gray-600: #757575;
+  --gray-700: #616161;
+  --gray-800: #424242;
+  --gray-900: #212121;
+  --black: #000000;
+  --white: #ffffff;
+}
+
+/* ユーザーのシステム設定がダークモードの場合に適用 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000000;
+    --foreground: #ffffff;
+      /* 赤色の定義 */
+    --red-50: #ffebee;
+    --red-100: #ffcdd2;
+    --red-200: #ef9a9a;
+    --red-300: #e57373;
+    --red-400: #ef5350;
+    --red-500: #f44336;
+    --red-600: #e53935;
+    --red-700: #d32f2f;
+    --red-800: #c62828;
+    --red-900: #b71c1c;
+
+    /* 緑色の定義 */
+    --green-50: #e8f5e9;
+    --green-100: #c8e6c9;
+    --green-200: #a5d6a7;
+    --green-300: #81c784;
+    --green-400: #66bb6a;
+    --green-500: #4caf50;
+    --green-600: #43a047;
+    --green-700: #388e3c;
+    --green-800: #2e7d32;
+    --green-900: #1b5e20;
+
+    /* ライトグリーンの定義 */
+    --light-green-50: #f1f8e9;
+    --light-green-100: #dcedc8;
+    --light-green-200: #c5e1a5;
+    --light-green-300: #aed581;
+    --light-green-400: #9ccc65;
+    --light-green-500: #8bc34a;
+    --light-green-600: #7cb342;
+    --light-green-700: #689f38;
+    --light-green-800: #558b2f;
+    --light-green-900: #33691e;
+
+    /* 水色の定義 */
+    --cyan-50: #e0f7fa;
+    --cyan-100: #b2ebf2;
+    --cyan-200: #80deea;
+    --cyan-300: #4dd0e1;
+    --cyan-400: #26c6da;
+    --cyan-500: #00bcd4;
+    --cyan-600: #00acc1;
+    --cyan-700: #0097a7;
+    --cyan-800: #00838f;
+    --cyan-900: #006064;
+
+    /* 新しい水色の定義 */
+    --light-blue: #a0d8ef;
+
+    /* グレーの定義 */
+    --gray-50: #fafafa;
+    --gray-100: #f5f5f5;
+    --gray-200: #eeeeee;
+    --gray-300: #e0e0e0;
+    --gray-400: #bdbdbd;
+    --gray-500: #9e9e9e;
+    --gray-600: #757575;
+    --gray-700: #616161;
+    --gray-800: #424242;
+    --gray-900: #212121;
+    --black: #000000;
+    --white: #ffffff;
+  }
+}
+
+/* 全体のスタイル設定 */
+body {
+  color: var(--foreground);      /* 文字色にカラー変数を適用 */
+  background: var(--background); /* 背景色にカラー変数を適用 */
+  font-family: Arial, Helvetica, sans-serif;  /* フォントファミリーの設定 */
+}
