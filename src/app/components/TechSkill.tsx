@@ -18,7 +18,7 @@ const skills = [
 
 export function TechSkill() {
   return (
-    <div className="py-20">
+    <div id="skills-section" className="py-20">
       <Typography 
         variant="h2" 
         className="text-3xl font-bold mb-8 text-center" 

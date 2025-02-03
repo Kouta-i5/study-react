@@ -32,7 +32,9 @@ const experiences = [
 
 export function Career() {
   return (
-    <div className="py-20 max-w-3xl mx-auto">
+    <div 
+      id="career-section"
+      className="py-20 max-w-3xl mx-auto">
       <Typography variant="h2" className="text-3xl font-bold mb-12 text-center" {...({} as any)}>
         経歴
       </Typography>

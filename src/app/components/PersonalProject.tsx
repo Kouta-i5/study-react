@@ -38,7 +38,7 @@ const projectsData: ProjectCardProps[] = [
 
 export function PersonalProject() {
   return (
-    <section id="projects" className="py-12 md:py-24 lg:py-32">
+    <section id="personal-projects-section" className="py-12 md:py-24 lg:py-32">
       <div className="container px-4 md:px-6">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">個人での取り組み</h2>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">

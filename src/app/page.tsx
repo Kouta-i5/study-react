@@ -19,12 +19,12 @@ import { motion } from "framer-motion";
 import { Career } from "@/app/components/Career";
 import { TechSkill } from "@/app/components/TechSkill";
 import { Header } from "@/app/components/Header";
-import { HomeSection } from "@/app/components/Home";
+import { Home } from "@/app/components/Home";
 import { PersonalProject } from "@/app/components/PersonalProject";
 import { LabProject } from "@/app/components/LabProject";
 import { Qualifications } from "@/app/components/Qualifications"
 
-export default function Home() {
+export default function Page() {
   return (
     <ThemeProvider>
       <main
@@ -33,12 +33,12 @@ export default function Home() {
         id="main-content"
       >
         <Header />
-        <HomeSection />
-        <TechSkill />
+        <Home />
         <Career />
+        <TechSkill />
         <Qualifications />
-        <PersonalProject  />
         <LabProject/>
+        <PersonalProject  />
       </main>
     </ThemeProvider>
   );

@@ -15,7 +15,7 @@ const qualifications = [
 
 export function Qualifications() {
   return (
-    <div className="py-20">
+    <div id="qualifications-section" className="py-20">
       <div className="mb-20">
         <Typography variant="h2" className="text-3xl font-bold mb-8 text-center" {...({} as any)}>
           資格
