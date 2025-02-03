@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { Typography, Button } from "@material-tailwind/react";
 import Image from "next/image";
 
-export function HomeSection() {
-  const titleWords = ["私の", "ポートフォリオ"];
+export function Home() {
+  const titleWords = ["KoutaLab"];
 
   const AnimatedTitle = () => (
     <Typography variant="h1" className="text-4xl font-bold mb-4" {...({} as any)}>
@@ -31,7 +31,7 @@ export function HomeSection() {
   );
 
   return (
-    <div className="relative flex flex-col md:flex-row items-center justify-between py-20">
+    <div id="home-section" className="relative flex flex-col md:flex-row items-center justify-between py-20">
       <div className="md:w-1/2 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
