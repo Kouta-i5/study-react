@@ -7,11 +7,12 @@ export function Header() {
   const tabRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   const menuItems = [
-    { id: 'home', label: 'Home', sectionId: 'home-section' },
-    { id: 'skills', label: 'Skills', sectionId: 'skills-section' },
-    { id: 'qualifications', label: 'Qualifications', sectionId: 'qualifications-section' },
-    { id: 'lab-projects', label: 'LabProjects', sectionId: 'lab-projects-section' },
-    { id: 'personal-projects', label: 'PersonalProjects', sectionId: 'personal-projects-section' }
+    { id: 'home', label: 'ホーム', sectionId: 'home-section' },
+    { id: 'career', label: '経歴', sectionId: 'career-section' },
+    { id: 'skills', label: '技術スキル', sectionId: 'skills-section' },
+    { id: 'qualifications', label: '資格', sectionId: 'qualifications-section' },
+    { id: 'lab-projects', label: '研究室での取り組み', sectionId: 'lab-projects-section' },
+    { id: 'personal-projects', label: '個人での取り組み', sectionId: 'personal-projects-section' }
   ];
 
   const handleScroll = (sectionId: string) => {

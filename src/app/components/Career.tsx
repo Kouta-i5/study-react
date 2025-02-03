@@ -34,7 +34,7 @@ export function Career() {
   return (
     <div className="py-20 max-w-3xl mx-auto">
       <Typography variant="h2" className="text-3xl font-bold mb-12 text-center" {...({} as any)}>
-        Career
+        経歴
       </Typography>
       
       <div className="relative">
